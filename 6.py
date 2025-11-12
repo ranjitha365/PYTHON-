@@ -1,11 +1,10 @@
-is_failed = True
-i = 0
-while is_failed:
-    i += 1
-    if i % 2 != 0:
-        continue # skip odd numbers
-    if i >= 100:
-        break # stop loop when i reaches 100
-    print(f"attempt: {i}")
-print("I never gave up ")
+# creating dictionary from user input (name and marks)
+student = {}  # empty dict
 
+name = input("Eneter your name:")   # taking input by user
+marks = input("Enter your marks:")
+
+student["name"] = name              #accessing dictionary
+student["marks"] = marks
+
+print("student information:", student) # get ready to output
