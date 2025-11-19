@@ -5,7 +5,7 @@ file.close()                  # closing for files
 
 file = open("notes.txt", "r")
 contents = file.readlines()  
- # to read multiple of lines                      # of the same file 
+                     # to read multiple of lines of the same file 
 print(contents)
 file.close() 
 
@@ -25,6 +25,7 @@ file.close()
 # using a "with key word"
 with open("notes.txt", "r") as f :
     print(f.read())
+
 
 
 
