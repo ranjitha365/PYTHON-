@@ -1,30 +1,28 @@
-#polymorphism
-class Dog:
-    def sound(self):
-        print("DOg barks: woof!")
-class cat:
-    def sound(self):
-        print("cat meows : meows")
+# GETTERS (it is said to ba an a output)
 
-for animal in (Dog(),cat()):
-    animal.sound()
+class person:
+    def __init__(self):
+        self.__age = 19
 
-
-# method over loading
-class calculator:
-    def add (sef, a, b):
-        print(a+b)
-        c = calculator
-        c.add(4,8)
-
-class calculator:
-        def add (self,a,b,c):
-             print(a+b)
-
-        def add(self,a  ,b ,c=0):
-             print(a + b + c)
-c = calculator
-c.add(1, 2)
-c.add(3, 4, 5)
+    def get_age(self):
+        return self.__age
+    
+p = person()
+print(p.get_age())
 
 
+# setters (it may update the value)
+
+class person:
+    def __init__(self):
+        self.__age = 19
+
+    def get_age(self):
+        return self.__age
+    
+    def set_age(self,value):
+        self.__age = value
+    
+p = person()
+p.set_age(25)
+print(p.get_age())
